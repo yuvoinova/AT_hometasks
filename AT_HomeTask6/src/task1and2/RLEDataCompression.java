@@ -13,8 +13,7 @@ public class RLEDataCompression {
 			if ((Character.isDigit(symbol)) || (symbol == '\\')) {
 				outputString.append("\\").append(symbol);
 			} else {
-				for (int checkedPosition = currentPosition + 1; checkedPosition < inputString
-						.length(); checkedPosition++) {
+				for (int checkedPosition = currentPosition + 1; checkedPosition < inputString.length(); checkedPosition++) {
 					checkedSymbol = inputString.charAt(checkedPosition);
 					if (symbol == checkedSymbol) {
 						increment++;
@@ -38,7 +37,6 @@ public class RLEDataCompression {
 		boolean isBroken;
 
 		while (currentPosition < inputString.length()) {
-			numberToString = new StringBuilder("");
 			symbol = inputString.charAt(currentPosition);
 			increment = 2;
 			if (symbol == '\\') {
@@ -50,10 +48,10 @@ public class RLEDataCompression {
 							"Unable to decode: string \"" + inputString + "\" is not RLE coded");
 				}
 			} else if (Character.isDigit(symbol)) {
+				numberToString = new StringBuilder("");
 				numberToString.append(symbol);
 				isBroken = false;
-				for (int checkedPosition = currentPosition + 1; checkedPosition < inputString
-						.length(); checkedPosition++) {
+				for (int checkedPosition = currentPosition + 1; checkedPosition < inputString.length(); checkedPosition++) {
 					checkedSymbol = inputString.charAt(checkedPosition);
 					if (Character.isDigit(checkedSymbol)) {
 						increment++;
