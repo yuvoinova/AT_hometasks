@@ -3,25 +3,25 @@ package task1and2;
 public class RLEDataCompression {
 	public static String code(String inputString) {
 		StringBuilder outputString = new StringBuilder("");
-		char symbol, checkedSymbol;
+		char currentSymbol, checkedSymbol;
 		int currentPosition = 0;
 		int increment;
 
 		while (currentPosition < inputString.length()) {
-			symbol = inputString.charAt(currentPosition);
+			currentSymbol = inputString.charAt(currentPosition);
 			increment = 1;
-			if ((Character.isDigit(symbol)) || (symbol == '\\')) {
-				outputString.append("\\").append(symbol);
+			if ((Character.isDigit(currentSymbol)) || (currentSymbol == '\\')) {
+				outputString.append("\\").append(currentSymbol);
 			} else {
 				for (int checkedPosition = currentPosition + 1; checkedPosition < inputString.length(); checkedPosition++) {
 					checkedSymbol = inputString.charAt(checkedPosition);
-					if (symbol == checkedSymbol) {
+					if (currentSymbol == checkedSymbol) {
 						increment++;
 					} else {
 						break;
 					}
 				}
-				outputString.append(increment).append(symbol);
+				outputString.append(increment).append(currentSymbol);
 			}
 			currentPosition = currentPosition + increment;
 		}
@@ -31,15 +31,15 @@ public class RLEDataCompression {
 	public static String decode(String inputString) {
 		StringBuilder outputString = new StringBuilder("");
 		StringBuilder numberToString = new StringBuilder("");
-		char symbol, checkedSymbol, nextSymbol;
+		char currentSymbol, checkedSymbol, nextSymbol;
 		int currentPosition = 0;
 		int increment;
 		boolean isBroken;
 
 		while (currentPosition < inputString.length()) {
-			symbol = inputString.charAt(currentPosition);
+			currentSymbol = inputString.charAt(currentPosition);
 			increment = 2;
-			if (symbol == '\\') {
+			if (currentSymbol == '\\') {
 				nextSymbol = inputString.charAt(currentPosition + 1);
 				if ((Character.isDigit(nextSymbol)) || (nextSymbol == '\\')) {
 					outputString.append(nextSymbol);
@@ -47,9 +47,9 @@ public class RLEDataCompression {
 					throw new IllegalArgumentException(
 							"Unable to decode: string \"" + inputString + "\" is not RLE coded");
 				}
-			} else if (Character.isDigit(symbol)) {
+			} else if (Character.isDigit(currentSymbol)) {
 				numberToString = new StringBuilder("");
-				numberToString.append(symbol);
+				numberToString.append(currentSymbol);
 				isBroken = false;
 				for (int checkedPosition = currentPosition + 1; checkedPosition < inputString.length(); checkedPosition++) {
 					checkedSymbol = inputString.charAt(checkedPosition);
