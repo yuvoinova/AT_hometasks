@@ -82,7 +82,7 @@ public class LinkedList<T> {
 				Result.append(currentElement.data + " ");
 				currentElement = currentElement.pointer;
 			}
-			return Result.toString();
+			return Result.toString().trim();
 		} else {
 			return "The list is empty";
 		}
