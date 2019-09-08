@@ -1,0 +1,8 @@
+Sep 08, 2019 4:01:54 AM run.Main scanEnumValue
+WARNING: Incorrect input during citizen creation. 'dljsdl' is not contained in enum person.HumanSex
+Sep 08, 2019 4:01:58 AM run.Main scanEnumValue
+WARNING: Incorrect input during citizen creation. 'sdfks' is not contained in enum person.Pet
+Sep 08, 2019 4:02:04 AM run.Main scanEnumValue
+WARNING: Incorrect input during citizen creation. Animal 'lion' is contained in enum person.WildAnimal and is not a pet
+Sep 08, 2019 4:02:16 AM run.Main scanEnumValue
+WARNING: Incorrect input during citizen creation. 'skdflf' is not contained in enum person.HumanSex
