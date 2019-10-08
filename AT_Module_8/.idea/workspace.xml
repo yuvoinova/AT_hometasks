@@ -4,22 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/run/Main.java" line="22" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e52d0937-d73e-43b1-a838-1559b4ffcac5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_12_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_12_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AT_Module_8.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module7_project/test/target/classes/com/test/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Module7_project/test/target/classes/com/test/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module7_project/test/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Module7_project/test/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module7_project/test/target/surefire-reports/TEST-com.test.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Module7_project/test/target/surefire-reports/TEST-com.test.AppTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module7_project/test/target/surefire-reports/com.test.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Module7_project/test/target/surefire-reports/com.test.AppTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module7_project/test/target/test-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Module7_project/test/target/test-1.0-SNAPSHOT-jar-with-dependencies.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module7_project/test/target/test-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Module7_project/test/target/test-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module7_project/test/target/test-classes/com/test/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Module7_project/test/target/test-classes/com/test/AppTest.class" afterDir="false" />
-    </list>
+    <list default="true" id="e52d0937-d73e-43b1-a838-1559b4ffcac5" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/run/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="272">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -50,6 +35,13 @@
       </list>
     </option>
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-105" />
     <option name="y" value="213" />
@@ -62,50 +54,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="AT_Module_8" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AT_Module_8" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AT_Module_8" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AT_Module_8" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AT_Module_8" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AT_Module_8" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AT_Module_8" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AT_Module_8" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AT_Module_8" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AT_Module_8" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="run" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567548853010" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AT_Module_9" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -154,9 +110,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="56" y="-7" width="1231" height="735" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2536294" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25789922" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -188,13 +143,11 @@
     <entry file="file://$PROJECT_DIR$/.classpath">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test.properties" />
     <entry file="file://$PROJECT_DIR$/src/main/java/run/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="272">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
