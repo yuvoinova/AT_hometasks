@@ -18,10 +18,11 @@ public class StoreEndpoint {
     }
 	
     @Step("get StoreInventory")
-    public Response getStoreInventory(){
-        return given()
-               .when()
-                	.get(Config.STORE_INVENTORY)
+    public Response getStoreInventory(String storeInventoryUri){
+        return SerenityRest.given()
+        			.header(HttpHeaders.CONTENT_TYPE, "application/json")
+        		.when()
+                	.get(storeInventoryUri)
                .then().extract().response();
     }
     

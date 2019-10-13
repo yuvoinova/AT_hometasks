@@ -13,6 +13,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import config.Config;
+
 @RunWith(SerenityRunner.class)
 public class TestStore {
 
@@ -28,7 +30,11 @@ public class TestStore {
 	@Test
 	@Title("verification of get StoreInventory")
 	public void verifyStoreInventory() {
-		Response storeInventoryResponse = storeEndpoint.getStoreInventory();
+		//Given
+		String storeInventoryUri = Config.PETSTORE_BASE_URL + Config.STORE_INVENTORY;
+		//When
+		Response storeInventoryResponse = storeEndpoint.getStoreInventory(storeInventoryUri);
+		//Then
 		SoftAssertions assertions = new SoftAssertions();
 		assertions.assertThat(storeInventoryResponse.getStatusCode()).isEqualTo(200);
 		assertions.assertThat(storeInventoryResponse.getBody().toString()).isNotEmpty();
@@ -42,7 +48,7 @@ public class TestStore {
 		Order order = Order.createTestOrder();
 		// When
 		Response orderResponse = storeEndpoint.createOrder(order);
-		// THEN
+		// Then
 		long createdOrderId = orderResponse.body().as(Order.class).getId();
 		Order createdOrderFromService = storeEndpoint.getOrderById(String.valueOf(createdOrderId)).as(Order.class);
 		SoftAssertions assertions = new SoftAssertions();
