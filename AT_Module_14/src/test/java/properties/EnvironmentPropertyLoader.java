@@ -1,4 +1,4 @@
-package ui_tests.properties;
+package properties;
 
 import java.io.FileInputStream;
 import java.io.IOException;

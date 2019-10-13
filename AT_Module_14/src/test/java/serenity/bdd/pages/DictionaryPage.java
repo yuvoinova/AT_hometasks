@@ -1,4 +1,4 @@
-package uitests.serenity.bdd.pages;
+package serenity.bdd.pages;
 
 import net.thucydides.core.annotations.DefaultUrl;
 import org.openqa.selenium.By;

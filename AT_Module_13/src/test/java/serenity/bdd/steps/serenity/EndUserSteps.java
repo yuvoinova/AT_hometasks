@@ -11,6 +11,7 @@ import static org.hamcrest.Matchers.hasItem;
 public class EndUserSteps {
 
     DictionaryPage dictionaryPage;
+    
 
     @Step
     public void enters(String keyword) {
